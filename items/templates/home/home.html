@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <style>
+            body{background:url(https://i.pinimg.com/originals/d3/6d/46/d36d462db827833805497d9ea78a1343.jpg);
+    background-size: 100% 100%;}
+
+    h2{
+        position:absolute;
+        left: 400px;
+        top: 300px;
+    }
+
+    h3{
+        position:absolute;
+        left: 725px;
+        top: 300px; 
+    }
+
+    h4{
+        position:absolute;
+        left: 1015px;
+        top: 300px;  
+    }
+
+    button {
+            background-color:cornflowerblue;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration:solid;
+            display: inline-block;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            letter-spacing: 1mm;
+            margin: 6px 4px;
+            cursor: pointer;
+            }
+        
+        </style>
+        
+    </head>
+    <body >
+        <h2>
+            <button onclick = "myFunction1()"> Show Table </button>
+        </h2>
+
+        <script>
+            function myFunction1(){
+                location.replace("http://127.0.0.1:8000/items/")
+            }
+            </script>
+        <h3>
+            <button onclick = "myFunction2()"> Add Item </button>
+        </h3>
+
+        <script>
+            function myFunction2(){
+                location.replace("http://127.0.0.1:8000/add/")
+            }
+            </script>
+        <h4>
+            <button onclick = "myFunction3()"> Delete Item </button>
+            </h4>
+
+        <script>
+            function myFunction3(){
+                location.replace("http://127.0.0.1:8000/delete/")
+            }
+        </script>
+
+    </body>
+    
+</html>

@@ -1,0 +1,86 @@
+<html>
+<head>
+<style>
+    body{background:url(https://png.pngtree.com/thumb_back/fw800/background/20190828/pngtree-wooden-panel-background-with-old-green-planks-image_310046.jpg);
+    background-size: 100% 100%;}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  background-color: rgb(174, 216, 243);
+  border: 1px solid black;
+  
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+table tr:nth-child(even) {
+  background-color:rgb(92, 194, 83);
+}
+table tr:nth-child(odd) {
+ background-color:rgb(187, 247, 159);
+}
+
+h2{
+    font-size: larger;
+    font-weight: bold;
+    color:black;
+    padding: 25px 32px;
+    background-color: lightgreen;
+    letter-spacing: 1cm;
+    
+
+}
+
+button {
+            background-color:green;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration:solid;
+            display: inline-block;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            letter-spacing: 1mm;
+            margin: 0px 0px;
+            cursor: pointer;
+            }
+
+      h3{
+        position:absolute;
+        left: 1300px;
+        top: 0px;}
+  
+
+</style>
+<body>
+<center><h2>SEARCH RESULTS</h2></center>
+    
+<h3>
+  <button onclick = "myFunction()"> BACK </button>
+</h3>
+
+<script>
+  function myFunction(){
+      location.replace("http://127.0.0.1:8000/items/")
+  }
+  </script>
+
+
+
+<table align="center">
+    {% for each in data %}
+    <tr>
+        <td> {{each.0}}     </td>
+        <td> {{each.1}}    </td>
+        <td> {{each.2}}   </td>
+        <td> <img src={{each.3}} width="75" > </td>
+    </tr>
+ {% endfor %}
+</table>
+</body>
+</html>

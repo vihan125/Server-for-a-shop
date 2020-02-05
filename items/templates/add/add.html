@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <style>
+            body{background:url(https://images.freecreatives.com/wp-content/uploads/2015/04/Light-Purple-11.jpg);
+    background-size: 100% 100%;}
+    button {
+            background-color:purple;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration:solid;
+            display: inline-block;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            letter-spacing: 1mm;
+            margin: 6px 4px;
+            cursor: pointer;
+            }
+        .button1 {
+            background-color:purple;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration:solid;
+            display: inline-block;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            letter-spacing: 1mm;
+            margin: 6px 4px;
+            cursor: pointer;
+            }
+
+            h3{
+        position:absolute;
+        left: 1200px;
+        top: 30px;
+    }
+    h2{
+        position:absolute;
+        left: 650px;
+        top: 200px;
+    }
+
+    h1{
+        position:absolute;
+        left: 650px;
+        top: 20px;
+    }
+        </style>
+    </head>
+<body>
+<center>
+<h1>ENTER ITEM DETAILS</h1>
+
+<h2>
+<form method="post">
+    {% csrf_token %}
+    {{ID.as_p}}
+    {{name.as_p}}
+    {{price.as_p}}
+    {{image.as_p}}
+
+
+    <button type="submit"> Add Item </button>
+</form>
+</h2>
+</center>
+
+<h3>
+    <button class="button button1" onclick = "myFunction()"> BACK </button>
+</h3>
+
+<script>
+    function myFunction(){
+        location.replace("http://127.0.0.1:8000/home/")
+    }
+    </script>
+
+
+</body>
+</html>
