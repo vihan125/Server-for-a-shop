@@ -23,6 +23,19 @@ a simple server created for a shop to manage its items using django framework ( 
   <image src = https://github.com/vihan125/Server-for-a-shop/blob/master/server%20images/search.PNG width="90%" height="90%">
 </p>
   This page will show the products that has the keyword you entered on the search bar in the privious page. By clicking "back" button you can go back to the product list page.
+  
+  ## Add product page
+  <p align="center">
+  <image src = https://github.com/vihan125/Server-for-a-shop/blob/master/server%20images/add_item.PNG width="90%" height="90%">
+</p> 
+  You can add a new product for the shop by entering a ID, name, price and an URL of a image that describes that product.
+  
+  ## Delete product page
+ <p align="center">
+  <image src = https://github.com/vihan125/Server-for-a-shop/blob/master/server%20images/delete.PNG width="90%" height="90%">
+</p>
+  By entering the relevant ID of the product, yoy can delete a item from the product list.
+  
  
 
 
