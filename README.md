@@ -16,5 +16,13 @@ a simple server created for a shop to manage its items using django framework ( 
 <p align="center">
   <image src = https://github.com/vihan125/Server-for-a-shop/blob/master/server%20images/table.PNG width="90%" height="90%">
 </p>
+  In this page you can see the whole produst in the shop with a relative image and you have the option to search for a product from its name and resulting page will list down all the products that iclude that given name. From clicking the "back" button you can go back to the home page.
+  
+ ## Search results page
+ <p align="center">
+  <image src = https://github.com/vihan125/Server-for-a-shop/blob/master/server%20images/search.PNG width="90%" height="90%">
+</p>
+  This page will show the products that has the keyword you entered on the search bar in the privious page. By clicking "back" button you can go back to the product list page.
+ 
 
 
