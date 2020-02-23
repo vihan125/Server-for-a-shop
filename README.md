@@ -3,6 +3,6 @@ a simple server created for a shop to manage its items using django framework ( 
 
 ## Home page
 <p align="center">
-  <image src = https://github.com/vihan125/Micro-bank-App-/blob/master/images/ER.jpeg width="90%" height="90%">
+  <image src = https://github.com/vihan125/Server-for-a-shop/blob/master/server%20images/home.PNG width="90%" height="90%">
 </p>
 
